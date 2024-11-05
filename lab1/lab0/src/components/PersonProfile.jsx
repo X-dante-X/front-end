@@ -3,7 +3,6 @@ import './PersonProfile.css';
 import RatingBar from './RatingBar';
 
 function PersonProfile({ id, name, birth, eyes, rating, onEdit, onDelete, onRate }) {
-
     return (
         <div className="profile-card">
             <h2 className="profile-name">{name}</h2>

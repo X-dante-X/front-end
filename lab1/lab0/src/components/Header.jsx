@@ -4,7 +4,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 function Header({ items }) {
   return (
-    <header>
+    <header className='fixed-top container-fluid ustify-content-between align-items-center text-center'>
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="/">
           MyApp

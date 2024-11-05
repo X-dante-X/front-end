@@ -1,10 +1,16 @@
 import React from 'react';
+import {useContext} from 'react';
+import AppContext from '../data/AppContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useReducer} from 'react';
 import AppReducer from '../data/AppReducer'
 
 function FlexContainer({ element: PersonProfile, data }) {
-    const [items, dispatch] = useReducer(AppReducer, data);
+    //const [items, dispatch] = useReducer(AppReducer, data);
+    const context = useContext(AppContext);
+    const dispatch = context.dispatch;
+    const items = context.items;
+    console.log(items);
     return (
         <div className="container">
             <div className="row">

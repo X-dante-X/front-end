@@ -1,72 +1,72 @@
 export const data = [
   {
     "id": 1,
-    "name": "Karol",
-    "birth": "2002-02-18",
-    "eyes": "blue",
-    "rating": 8
-  },
-  {
-    "id": 2,
-    "name": "Katarzyna",
-    "birth": "1992-08-01",
-    "eyes": "hazel",
-    "rating": 6
-  },
-  {
-    "id": 3,
-    "name": "Stanisław",
-    "birth": "1979-02-10",
-    "eyes": "brown",
+    "name": "Zofia",
+    "birth": "2002-04-12",
+    "eyes": "green",
     "rating": 7
   },
   {
+    "id": 2,
+    "name": "Jakub",
+    "birth": "2002-12-20",
+    "eyes": "brown",
+    "rating": 0
+  },
+  {
+    "id": 3,
+    "name": "Karol",
+    "birth": "1987-07-01",
+    "eyes": "blue",
+    "rating": 6
+  },
+  {
     "id": 4,
-    "name": "Stanisław",
-    "birth": "1963-10-08",
-    "eyes": "hazel",
-    "rating": 10
+    "name": "Michał",
+    "birth": "1955-05-08",
+    "eyes": "blue",
+    "rating": 7
   },
   {
     "id": 5,
-    "name": "Zofia",
-    "birth": "1970-08-22",
+    "name": "Jakub",
+    "birth": "1971-07-17",
     "eyes": "green",
-    "rating": 9
+    "rating": 6
   },
   {
     "id": 6,
-    "name": "Michał",
-    "birth": "1954-06-12",
+    "name": "Stanisław",
+    "birth": "1986-08-31",
     "eyes": "brown",
-    "rating": 8
+    "rating": 2
   },
   {
     "id": 7,
     "name": "Katarzyna",
-    "birth": "1983-03-10",
-    "eyes": "green",
-    "rating": 1
+    "birth": "1964-04-03",
+    "eyes": "blue",
+    "rating": 2
   },
   {
     "id": 8,
-    "name": "Anna",
-    "birth": "1966-04-26",
-    "eyes": "blue",
-    "rating": 1
+    "name": "Ewelina",
+    "birth": "1963-05-27",
+    "eyes": "hazel",
+    "rating": 10
   },
   {
     "id": 9,
-    "name": "Stanisław",
-    "birth": "1955-04-14",
-    "eyes": "blue",
-    "rating": 4
+    "name": "Jakub",
+    "birth": "1980-09-13",
+    "eyes": "green",
+    "rating": 5
   },
   {
     "id": 10,
     "name": "Karol",
-    "birth": "1971-05-01",
-    "eyes": "green",
-    "rating": 6
+    "birth": "1981-08-18",
+    "eyes": "blue",
+    "rating": 10
   }
 ];

@@ -1,17 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import "./Footer.css"
 
 function Footer() {
   return (
-    <footer className="bg-light text-center py-4">
-        <h1>
-            qwe
-        </h1>
+    <footer className="bg-light fixed-bottom container-fluid ustify-content-between align-items-center text-center py-4">
       <Container>
         <Row>
-          <Col>
+          <Col className="container-fluid d-flex flex-row justify-content-between align-items-center" >
             <img
-              src="..\assets\WSEI-Kraków-logo.png"
+              src="wsei.png"
               alt="Logo Uczelni"
               className="footer-logo"
             />

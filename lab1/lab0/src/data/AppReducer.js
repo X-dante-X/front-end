@@ -13,7 +13,12 @@ const AppReducer = (state, action) => {
             });
 
         case "edit":
-            // Logika edycji, jeśli potrzebujesz
+            return state.map(item =>
+                item.id === action.item.id ? { ...item, ...action.item } : item
+            );
+
+        case "add":
+            return [...state, action.item];
 
         default:
             return state;
