@@ -3,12 +3,13 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import AppContext from "../data/AppContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import useData from "../hooks/useData";
+import useDispatch from "../hooks/useDispatch";
 
 function FormPageEdit({ id, name, birth, eyes, rating }) {
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
   const navigate = useNavigate();
-  const context = useContext(AppContext);
-  const dispatch = context.dispatch;
+  const dispatch = useDispatch();
 
   const onSubmit = (formData) => {
     console.log("Updated data for ID:", id, formData);

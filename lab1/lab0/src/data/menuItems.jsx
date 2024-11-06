@@ -3,8 +3,11 @@ import Lab1 from "../pages/Lab1";
 import Lab2 from "../pages/Lab2";
 import Lab3 from "../pages/Lab3";
 import Lab4 from "../pages/Lab4";
+import Lab5 from "../pages/Lab5";
 import Lab4Add from "../pages/Lab4Add";
 import Lab4Edit from "../pages/Lab4Edit";
+import UserDetail from "../components/UserDetail";
+import PostComments from "../components/PostComments";
 
 export const menuItems = [
   {
@@ -48,5 +51,23 @@ export const menuItems = [
     label: "Laboratorium 4 Edit",
     path: "/lab4/edit/:id",
     element: <Lab4Edit />,
-  }
+  },
+  {
+    id: 8,
+    label: "Laboratorium 5",
+    path: "/lab5",
+    element: <Lab5 />,
+  },
+  {
+    id: 9,
+    label: "",
+    path: "/lab5/users/:id",
+    element: <PostComments  />,
+  },
+  {
+    id: 10,
+    label: "",
+    path: "/lab5/posts/:id/comments",
+    element: <UserDetail  />,
+  },
 ];

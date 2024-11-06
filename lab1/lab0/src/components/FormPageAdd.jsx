@@ -2,15 +2,17 @@ import { Button, Container, Form, FormControl } from "react-bootstrap";
 import { useState, useContext } from "react";
 import AppContext from '../data/AppContext';
 import { useNavigate } from "react-router-dom";
+import useData from "../hooks/useData";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import useDispatch from "../hooks/useDispatch";
 
 const confirmPasswordField = "confirmPassword";
 const passwordField = "password";
 const emailField = "email";
 
 function FormPageAdd() {
-  const context = useContext(AppContext);
-  const dispatch = context.dispatch;
-  const items = context.items;
+  const dispatch = useDispatch();
+  const items = useData();
   const navigate = useNavigate();
   const [errors, setErrors] = useState([]);
   const [isSending, setSending] = useState(false);

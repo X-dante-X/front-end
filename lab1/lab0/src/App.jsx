@@ -11,14 +11,10 @@ import { data } from "./data/module-data.js";
 const router = createBrowserRouter(menuItems);
 
 function App() {
-  const [state, appDispatch] = useReducer(AppReducer, data);
-  console.log(state);
   return (
-      <AppContext.Provider value={{ items: state, dispatch: appDispatch }}>
           <RootLayout items={menuItems}>
               <RouterProvider router={router} />
           </RootLayout>
-      </AppContext.Provider>
   );
 }
 
