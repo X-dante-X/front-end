@@ -1,23 +1,23 @@
-import { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Accordion from './Accordion'; 
+import Accordion from './Accordion';
 
 function Table({ data }) {
   const [sortConfig, setSortConfig] = useState(null);
 
-  const headers = useMemo(() => {
-    if (data.length === 0) return [];
-    return Object.keys(data[0]).map(key => ({
-      key,
-      label: key.charAt(0).toUpperCase() + key.slice(1),
-    }));
-  }, [data]);
+  const headers = [
+    { key: 'user', label: 'User Username' },
+    { key: 'post', label: 'Post Title' },
+    { key: 'comments', label: 'Comments Count' }
+  ];
 
   const sortedData = [...data];
   if (sortConfig !== null) {
     sortedData.sort((a, b) => {
-      if (a[sortConfig.key] < b[sortConfig.key]) return sortConfig.direction === 'asc' ? -1 : 1;
-      if (a[sortConfig.key] > b[sortConfig.key]) return sortConfig.direction === 'asc' ? 1 : -1;
+      const aKey = sortConfig.key === 'user' ? a.user.name : sortConfig.key === 'comments' ? a.comments.length : a.post.title;
+      const bKey = sortConfig.key === 'user' ? b.user.name : sortConfig.key === 'comments' ? b.comments.length : b.post.title;
+      if (aKey < bKey) return sortConfig.direction === 'asc' ? -1 : 1;
+      if (aKey > bKey) return sortConfig.direction === 'asc' ? 1 : -1;
       return 0;
     });
   }
@@ -33,9 +33,9 @@ function Table({ data }) {
   return (
     <div className="table-responsive" style={{ maxHeight: '600px', overflowY: 'scroll' }}>
       <table className="table table-bordered table-striped">
-        <thead className="table-light">
+        <thead className="table-light" style={{ position: 'sticky', top: 0, zIndex: 1 }}>
           <tr>
-            {headers.map(header => (
+            {headers.map((header) => (
               <th
                 key={header.key}
                 className="text-center"
@@ -65,15 +65,15 @@ function Table({ data }) {
 function Row({ data, headers }) {
   return (
     <tr>
-      {headers.map(header => (
+      {headers.map((header) => (
         <td key={header.key} className="text-black">
           {header.key === 'user' ? (
-            <Link to={`/lab5/users/${data.userId}`}>{data.user}</Link>
+            <Link to={`/lab5/users/${data.user.id}`}>{data.user.name}</Link>
           ) : header.key === 'post' ? (
             <Accordion title={data.post.title} body={data.post.body} />
           ) : header.key === 'comments' ? (
-            <Link to={`/lab5/posts/${data.postId}/comments`}>
-              {data.comments} Comments
+            <Link to={`/lab5/posts/${data.post.id}/comments`}>
+              {data.comments.length} Comments
             </Link>
           ) : (
             renderCellContent(data[header.key])

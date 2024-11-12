@@ -62,12 +62,12 @@ export const menuItems = [
     id: 9,
     label: "",
     path: "/lab5/users/:id",
-    element: <PostComments  />,
+    element: <UserDetail  />,
   },
   {
     id: 10,
     label: "",
     path: "/lab5/posts/:id/comments",
-    element: <UserDetail  />,
+    element: <PostComments  />,
   },
 ];

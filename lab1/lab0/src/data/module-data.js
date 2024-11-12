@@ -1,72 +1,72 @@
 export const data = [
   {
     "id": 1,
-    "name": "Stanisław",
-    "birth": "1969-06-11",
-    "eyes": "brown",
-    "rating": 8
-  },
-  {
-    "id": 2,
-    "name": "Katarzyna",
-    "birth": "1961-11-08",
-    "eyes": "hazel",
-    "rating": 7
-  },
-  {
-    "id": 3,
-    "name": "Anna",
-    "birth": "1975-09-19",
-    "eyes": "blue",
-    "rating": 8
-  },
-  {
-    "id": 4,
-    "name": "Tomasz",
-    "birth": "1979-07-21",
+    "name": "Zofia",
+    "birth": "1955-11-17",
     "eyes": "green",
     "rating": 5
   },
   {
+    "id": 2,
+    "name": "Jakub",
+    "birth": "1981-06-28",
+    "eyes": "green",
+    "rating": 6
+  },
+  {
+    "id": 3,
+    "name": "Karol",
+    "birth": "1961-07-02",
+    "eyes": "blue",
+    "rating": 7
+  },
+  {
+    "id": 4,
+    "name": "Tomasz",
+    "birth": "1968-05-27",
+    "eyes": "green",
+    "rating": 4
+  },
+  {
     "id": 5,
+    "name": "Jakub",
+    "birth": "1989-05-18",
+    "eyes": "hazel",
+    "rating": 7
+  },
+  {
+    "id": 6,
     "name": "Michał",
-    "birth": "1959-12-24",
+    "birth": "1964-11-29",
     "eyes": "green",
     "rating": 9
   },
   {
-    "id": 6,
-    "name": "Monika",
-    "birth": "1970-11-02",
-    "eyes": "blue",
-    "rating": 3
-  },
-  {
     "id": 7,
-    "name": "Zofia",
-    "birth": "1957-02-13",
-    "eyes": "brown",
-    "rating": 4
+    "name": "Katarzyna",
+    "birth": "1977-07-10",
+    "eyes": "blue",
+    "rating": 8
   },
   {
     "id": 8,
-    "name": "Michał",
-    "birth": "1962-02-04",
+    "name": "Tomasz",
+    "birth": "1955-09-22",
     "eyes": "green",
-    "rating": 1
+    "rating": 6
   },
   {
     "id": 9,
     "name": "Michał",
-    "birth": "1959-09-17",
+    "birth": "1952-12-02",
     "eyes": "green",
-    "rating": 0
+    "rating": 6
   },
   {
     "id": 10,
-    "name": "Karol",
-    "birth": "1960-07-27",
+    "name": "Tomasz",
+    "birth": "1974-03-01",
     "eyes": "blue",
-    "rating": 9
+    "rating": 4
   }
 ];
